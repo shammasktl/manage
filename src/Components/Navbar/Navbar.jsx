@@ -14,7 +14,7 @@ const Navbar = () => {
     })
     return (
         <>
-            <div className='mt-4 navbar'>
+            <div className='mt-4 navbar top-0 right-0 left-0'>
                 <div className="flex justify-between items-center mx-auto my-0 py-7 w-[80%] navcontent">
                     <div className="logo">
                         <img src={media.logo} alt="" />
