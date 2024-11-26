@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'motion/react'
-import { media } from '@/assets/assets'
+import { media, reviews } from '@/assets/assets'
 
 const Manage = () => {
   const second = [
@@ -100,7 +100,7 @@ const Manage = () => {
         }
       </div>
       <div className="pattern">
-        <img src={media.bgTabletPattern} className='w-[500px] relative -left-80 -top-40 -z-10' alt="" />
+        <img src={media.bgTabletPattern} className='w-[500px] relative -left-60 bottom-56 -z-10' alt="" />
       </div>
     </div>
   )
