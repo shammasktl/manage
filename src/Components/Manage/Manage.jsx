@@ -43,7 +43,7 @@ const Manage = () => {
         {
           second.map((item, index) => {
             return (
-              <div className='flex gap-8'>
+              <div className='flex gap-8' key={index}>
                 <motion.span
                   initial={{
                     opacity: 0,

@@ -3,3 +3,8 @@
 * {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
