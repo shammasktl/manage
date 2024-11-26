@@ -5,10 +5,10 @@ import { media } from '../../assets/assets'
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
-    useEffect(()=>{
+    useEffect(() => {
         if (isOpen) {
             document.body.classList.add('overflow-hidden')
-        }else {
+        } else {
             document.body.classList.remove('overflow-hidden')
         }
     })
@@ -31,19 +31,23 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="responsive">
-                <div className="links">
-                    <ul className='flex gap-3 text-lg flex-col text-center items-center justify-center bg-white shadow-lg max-w-72 top-24 rounded-md px-6 right-6 py-5 absolute'>
-                        <li className='cursor-pointer'>Pricing</li>
-                        <li className='cursor-pointer'>Product</li>
-                        <li className='cursor-pointer'>About Us</li>
-                        <li className='cursor-pointer'>Careers</li>
-                        <li className='cursor-pointer'>Community</li>
-                        <button className='block w-56 bg-orange-500 px-3 py-2 rounded-full text-white text-xl bg'>Get Started</button>
-                        
-                    </ul>
-                </div>
-            </div>
+            {
+                isOpen && (
+                    <div className="responsive duration-200 md:hidden">
+                        <div className="links">
+                            <ul className='flex gap-3 text-lg flex-col text-center items-center justify-center bg-white shadow-lg max-w-72 top-24 rounded-md px-6 right-6 py-5 absolute'>
+                                <li className='cursor-pointer'>Pricing</li>
+                                <li className='cursor-pointer'>Product</li>
+                                <li className='cursor-pointer'>About Us</li>
+                                <li className='cursor-pointer'>Careers</li>
+                                <li className='cursor-pointer'>Community</li>
+                                <button className='block w-56 bg-orange-500 px-3 py-2 rounded-full text-white text-xl bg'>Get Started</button>
+
+                            </ul>
+                        </div>
+                    </div>
+                )
+            }
         </>
 
     )
