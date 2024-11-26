@@ -5,6 +5,7 @@ import { media } from '../../assets/assets'
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
+    const [active, setActive] = useState("pricing")
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add('overflow-hidden')
@@ -21,6 +22,11 @@ const Navbar = () => {
                     </div>
                     <div className="links">
                         <ul className='md:flex gap-3 hidden font-normal text-lg'>
+                            <li className={`cursor-pointer py-2 rounded-full ${active === "pricing"? "bg-stone-200 shadow-md px-2":""}`} onClick={()=>{setActive("pricing")}}>Pricing</li>
+                            <li className={`cursor-pointer py-2 rounded-full ${active === "products"? "bg-stone-200 shadow-md px-2":""}`} onClick={()=>{setActive("products")}}>Products</li>
+                            <li className={`cursor-pointer py-2 rounded-full ${active === "about"? "bg-stone-200 shadow-md px-2":""}`} onClick={()=>{setActive("about")}}>About Us</li>
+                            <li className={`cursor-pointer py-2 rounded-full ${active === "careers"? "bg-stone-200 shadow-md px-2":""}`} onClick={()=>{setActive("careers")}}>Careers</li>
+                            <li className={`cursor-pointer py-2 rounded-full ${active === "community" ? "bg-stone-200 shadow-md px-2":""}`} onClick={()=>{setActive("community")}}>Community</li>
                         </ul>
                     </div>
                     <div className="flex justify-center items-center gap-1 get-started">
