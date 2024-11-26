@@ -4,16 +4,18 @@ import Hero from './Components/Hero/Hero'
 import Manage from './Components/Manage/Manage'
 import Said from './Components/Said/Said'
 import Footer from './Components/Footer/Footer'
+import Simplify from './Components/Simplify/Simplify'
 
 function App() {
 
   return (
     <div className='landing'>
       <Hero />
-      <div className="others w-[80%] my-0 mx-auto">
+      <div className="mx-auto my-0 w-[80%] others">
         <Manage />
         <Said />
       </div>
+      <Simplify />
       <Footer />
     </div>
   )

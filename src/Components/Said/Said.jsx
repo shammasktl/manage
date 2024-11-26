@@ -11,9 +11,9 @@ import { cn } from '@/lib/utils'
 
 const Said = () => {
   return (
-    <div className='said'>
+    <div className='said flex items-center justify-center flex-col'>
       <h1 className='text-5xl font-bold text-center'>What they have said</h1>
-      <div className="reviews my-0 mx-auto mt-11 flex items-center justify-center">
+      <div className="reviews my-0 mx-auto mt-11 mb-16 flex items-center justify-center">
         <Carousel className={cn("w-full")}>
           <CarouselContent className={cn("w-full px-16 my-0 mx-auto")}>
             {
@@ -34,6 +34,7 @@ const Said = () => {
           <CarouselNext className={cn("mr-24")} />
         </Carousel>
       </div>
+      <button className='hover:bg-orange-700 cursor-pointer bg-orange-500 px-3 py-3 rounded-full max-w-52 text-white text-xl py'>Get Started</button>
     </div>
   )
 }
