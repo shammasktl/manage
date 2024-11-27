@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css'
 import Hero from './Components/Hero/Hero'
 import Manage from './Components/Manage/Manage'
-import Said from './Components/Said/Said'
 import Footer from './Components/Footer/Footer'
 import Simplify from './Components/Simplify/Simplify'
 
