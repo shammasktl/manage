@@ -100,7 +100,7 @@ const Manage = () => {
         }
       </div>
       <div className="pattern">
-        <img src={media.bgTabletPattern} className='w-[500px] relative -left-60 bottom-56 -z-10' alt="" />
+        <img src={media.bgTabletPattern} className='w-[500px] relative -left-80 bottom-56' alt="" />
       </div>
     </div>
   )

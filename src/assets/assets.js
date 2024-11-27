@@ -56,3 +56,11 @@ export const reviews = [
         src: avatar4,
     },
 ]
+
+export const social = [
+    iconFacebook,
+    iconInstagram,
+    iconPinterest,
+    iconTwitter,
+    iconYoutube,
+]

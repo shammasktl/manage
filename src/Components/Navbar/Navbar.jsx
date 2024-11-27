@@ -15,7 +15,7 @@ const Navbar = () => {
     })
     return (
         <>
-            <div className='mt-4 navbar top-0 right-0 left-0'>
+            <div className='mt-4 navbar top-0 right-0 left-0 z-20 relative'>
                 <div className="flex justify-between items-center mx-auto my-0 py-7 w-[80%] navcontent">
                     <div className="logo">
                         <img src={media.logo} alt="" />
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex justify-center items-center gap-1 get-started">
                         <button className='md:block hidden bg-orange-500 px-3 py-2 rounded-full text-white text-xl bg'>Get Started</button>
-                        <div className="block md:hidden z-50">
+                        <div className="block md:hidden">
                             <Hamburger toggled={isOpen} toggle={setOpen} />
                         </div>
                     </div>

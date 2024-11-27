@@ -11,15 +11,15 @@ import { cn } from '@/lib/utils'
 
 const Said = () => {
   return (
-    <div className='said flex items-center justify-center flex-col'>
+    <div className='said grid grid-cols-1 items-center justify-center flex-col'>
       <h1 className='text-5xl font-bold text-center'>What they have said</h1>
-      <div className="reviews my-0 mx-auto mt-11 mb-16 flex items-center justify-center">
-        <Carousel className={cn("w-full")}>
-          <CarouselContent className={cn("w-full px-16 my-0 mx-auto")}>
+      <div className="reviews my-0 mx-auto mt-11 mb-16 grid items-center justify-center">
+        <Carousel className={cn("w-full flex items-center justify-center my-0 mx-auto")}>
+          <CarouselContent className={cn("w-full px-16 flex")}>
             {
               reviews.map((review, index) => {
                 return (
-                  <CarouselItem className={cn("flex items-center justify-center")} key={index}>
+                  <CarouselItem className={cn("flex items-center justify-center pb-20 my-0 mx-auto")} key={index}>
                     <div className="content flex items-center justify-center flex-col max-w-[300px] md:max-w-[500px] border px-7 py-16 gap-6 rounded-md shadow-2xl shadow-stone-800">
                       <img src={review.src} className='w-20' alt="" />
                       <h2 className='text-3xl font-semibold'>{review.name}</h2>
@@ -30,7 +30,7 @@ const Said = () => {
               })
             }
           </CarouselContent>
-          <CarouselPrevious className={cn("ml-24")} />
+          <CarouselPrevious className={cn("")} />
           <CarouselNext className={cn("mr-24")} />
         </Carousel>
       </div>

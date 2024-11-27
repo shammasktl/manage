@@ -9,13 +9,17 @@ import Said from './Components/Said/Said'
 function App() {
 
   return (
-    <div className='landing'>
-      <Hero />
-      <div className="mx-auto my-0 w-[80%] others">
-        <Manage />
-        <Said />
+    <div className='landing relative -z-20'>
+      <div className="w-full bg-white">
+        <Hero />
+        <div className="body-content">
+          <div className="mx-auto my-0 w-[80%] others">
+            <Manage />
+            <Said />
+          </div>
+          <Simplify />
+        </div>
       </div>
-      <Simplify />
       <Footer />
     </div>
   )
