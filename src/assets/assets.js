@@ -37,7 +37,7 @@ export const media = {
 export const reviews = [
     {
         name: "Anisha Li",
-        opinion: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
+        opinion: "Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
         src: avatar1,
     },
     {
@@ -47,7 +47,7 @@ export const reviews = [
     },
     {
         name: "Richard Watts",
-        opinion: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
+        opinion: "Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!",
         src: avatar3,
     },
     {

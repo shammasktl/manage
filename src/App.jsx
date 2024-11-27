@@ -9,7 +9,7 @@ import Said from './Components/Said/Said'
 function App() {
 
   return (
-    <div className='landing relative -z-20'>
+    <div className='landing relative'>
       <div className="w-full bg-white">
         <Hero />
         <div className="body-content">

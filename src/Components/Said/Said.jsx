@@ -30,7 +30,7 @@ const Said = () => {
               })
             }
           </CarouselContent>
-          <CarouselPrevious className={cn("")} />
+          <CarouselPrevious className={cn("ml-24")} />
           <CarouselNext className={cn("mr-24")} />
         </Carousel>
       </div>
