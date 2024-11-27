@@ -13,7 +13,6 @@ function App() {
       <Hero />
       <div className="mx-auto my-0 w-[80%] others">
         <Manage />
-        <Said />
       </div>
       <Simplify />
       <Footer />
